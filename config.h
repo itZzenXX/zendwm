@@ -65,6 +65,7 @@ static const char *termcmd[]  = { "urxvt", NULL };
 static const char *librewolf[]  = { "librewolf", NULL };
 static const char *torbrowser[] = { "torbrowser-launcher", NULL };
 static const char *keepassxc[] = { "keepassxc", NULL };
+static const char *virtmanager[] = { "virt-manager", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
@@ -79,6 +80,7 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_w,      spawn,          {.v = librewolf } },
 	{ MODKEY|ShiftMask,		XK_s,	   spawn,          {.v = torbrowser } },
 	{ MODKEY|ShiftMask,		XK_a,      spawn,          {.v = keepassxc } },
+        { MODKEY|ShiftMask,             XK_z,      spawn,          {.v = virtmanager } },
 	{ MODKEY,	                XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
